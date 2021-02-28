@@ -1,1 +1,26 @@
-#: import KivyMD
+<Gerenciador>:
+
+    TelaLogin:
+        name:"telalogin"
+    TelaPrincipal:
+        name:"telaprincipal"
+
+<TelaLogin>:
+BoxLayout:
+    BoxLayout:
+        orientation:"vertical"
+        BoxLayout:
+            orientation:"vertical"
+            MDTextField:
+                hint_text:"nome de usuário"
+                write_tab: False
+                multiline: False
+            MDTextField:
+                hint_text:"senha"
+                write_tab: False
+                multiline: False
+        BoxLayout:
+            MDRaisedButton:
+                text: "Clique para logar"
+
+<TelaPrincipal>:
